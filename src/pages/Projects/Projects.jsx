@@ -23,9 +23,14 @@ const Projects = () => {
           <h2>{project.title}</h2>
           <p>{project.description}</p>
           <p>{project.mini_description}</p>
-          <ul>
+
+          <h4>технологии которые были использованы</h4>
+          <ul >
             {project.tools.map((tool, index) => (
-              <li key={index}>
+              <li
+                key={index}
+                style={{ display: "flex", gap: "20px", fontSize: "33px" ,margin: "10px" }}
+              >
                 {tool.name} <span>{tool.version}</span>
               </li>
             ))}
