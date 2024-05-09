@@ -3,7 +3,7 @@
 Этот репозиторий содержит веб-сайт портфолио, разработанный с использованием React, Redux/Toolkit, Axios, React Router DOM и Sass для фронтенда, а также Laravel с PostgreSQL для бэкенда.
 
 - **Репозиторий фронтенда:** [Ссылка на репозиторий фронтенда](https://github.com/EmirlanDogdurbaev/team-portfolio)
-- **Репозиторий бэкенда:** [Ссылка на репозиторий бэкенда](https://github.com/EmirlanDogdurbaev/portfolio-laravel-backend)
+- **Репозиторий бэкенда:** [Ссылка на репозиторий бэкенда](https://github.com/EmirlanDogdurbaev/team-portfolio-backend)
 
 ### Начало работы
 
