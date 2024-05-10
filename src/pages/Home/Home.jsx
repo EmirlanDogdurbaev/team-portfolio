@@ -1,15 +1,13 @@
 import classes from "./Home.module.scss";
 
 const Home = () => {
-
-
-
     return (
         <section className={classes.Home}>
             <div className={classes.container}>
                 <article>
-                    <h2>Добро пожаловать в мир ----------------------------- <br/> ----------------------- "Сказочные
-                        программисты"!</h2>
+                    <h2>Добро пожаловать в мир ----------------------------- <br/> -----------------------
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
+                        "Сказочные программисты"!</h2>
                     <p>
                         Приветствуем вас в нашей удивительной цифровой сказке, где каждая строчка кода — это новая глава
                         захватывающего приключения! <br/> Мы — команда талантливых программистов и волшебников
@@ -21,7 +19,7 @@ const Home = () => {
                     <img
                         width={400}
                         src="https://habrastorage.org/getpro/habr/upload_files/a11/61f/b92/a1161fb920c6ba013f4e997b7bcad877.png"
-                        alt=""/>
+                        alt="images"/>
                 </div>
             </div>
 
@@ -67,7 +65,7 @@ const Home = () => {
                 </div>
             </div>
 
-           
+
         </section>
     )
 }

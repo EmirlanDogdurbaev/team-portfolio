@@ -11,21 +11,21 @@ function App() {
   return (
     <>
       {localStorage.getItem("access_token") ? (
-        <Layout>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path={"/about"} element={<About />} />
-            <Route path={"/projects"} element={<Projects />} />
-          </Routes>
-        </Layout>
+          <Layout>
+            <Routes>
+              <Route exact path="/" element={<Home/>}/>
+              <Route path={"/about"} element={<About/>}/>
+              <Route path={"/projects"} element={<Projects/>}/>
+            </Routes>
+          </Layout>
       ) : (
-        <Layout>
-          <Routes>
-            <Route exact path="/register" element={<Register />} />
-            <Route path={"/login"} element={<Login />} />
-            <Route path="/*" element={<Navigate to="/register" />} />
-          </Routes>
-        </Layout>
+          <Layout>
+            <Routes>
+              <Route exact path="/register" element={<Register/>}/>
+              <Route path={"/login"} element={<Login/>}/>
+              <Route path="/*" element={<Navigate to="/register"/>}/>
+            </Routes>
+          </Layout>
       )}
     </>
   );
