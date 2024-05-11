@@ -1,5 +1,8 @@
 .Navbar {
-  @apply flex
+  @apply flex;
 
+  .nav{
+    @apply bg-sky-300;
+  }
 
 }
