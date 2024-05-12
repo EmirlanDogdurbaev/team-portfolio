@@ -1,45 +1,105 @@
 .Home {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @apply w-screen h-screen bg-no-repeat  bg-left-bottom;
+  background-image: url("https://w.forfun.com/fetch/8c/8c79d9da358b5156576ec3e284ae08d1.jpeg");
 
-  > .container {
-    padding: 100px 0 0;
-    width: 90%;
-    margin: 0 auto;
-    height: 500px;
-    display: flex;
-    justify-content: space-between;
-
+  .container {
+    @apply flex w-11/12 mx-auto h-dvh  py-5;
 
     > article {
+      @apply flex flex-col justify-items-start  justify-center w-full h-5/6 gap-5;
+
       > h2 {
-        font-size: 2.2rem;
-        margin-bottom: 20px;
-        line-height: 1.6;
+        @apply text-5xl  leading-tight text-white ;
+        font-family: 'Poppins', sans-serif;
 
       }
 
       > p {
-        width: 800px;
-        font-size: 24px;
-        line-height: 1.5;
-        text-align: start;
+        @apply text-2xl w-2/3 leading-relaxed text-white
+      }
+
+      a {
+        @apply border border-white inline-block px-10 py-3 rounded bg-white my-3.5;
+        width: fit-content;
       }
     }
-
-    .card_container {
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-
-    }
-
-
   }
 
+  .quote {
+    @apply h-96 flex flex-col justify-center w-screen;
+    > section {
+      @apply flex w-4/5 mx-auto gap-10 items-center justify-between h-5/6;
+
+      img {
+        @apply w-1/4
+      }
+
+      > article {
+        @apply text-white w-2/3;
+        > p {
+          @apply text-xl   text-white ;
+          letter-spacing: 1px;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  .departments {
+    @apply flex flex-col justify-center w-screen py-10;
+
+    > section {
+      @apply flex flex-col gap-10 w-4/5 mx-auto;
+
+      h3 {
+        @apply text-5xl text-white ;
+      }
+
+      .line {
+        @apply bg-orange-400 h-1 w-1/6
+      }
+
+      > aside {
+        @apply py-1;
+
+        > p {
+          @apply text-xl;
+
+          line-height: 1.6;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+
+
+  .departments_card {
+    @apply flex flex-col justify-center w-screen;
+
+    > section {
+      @apply flex  gap-10 w-11/12 mx-auto justify-between;
+      > article {
+        @apply flex items-end w-1/3 border-white border ;
+        height: 600px;
+
+
+        > aside {
+          @apply bg-white w-screen py-1.5 px-2.5 text-black h-40 flex flex-col gap-5;
+
+          > h4 {
+            @apply text-black mx-0 text-2xl
+          }
+
+          > p {
+            @apply text-black mx-0 text-xs
+          }
+
+          > a {
+            @apply px-2.5 py-1.5 border border-black;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
 }

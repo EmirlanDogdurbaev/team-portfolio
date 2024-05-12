@@ -24,8 +24,6 @@ const Navbar = () => {
                         <Link to={"/achivments"}>Achivments</Link>
                     </li>
                 </ul>
-
-
             </nav>
         </header>
     );

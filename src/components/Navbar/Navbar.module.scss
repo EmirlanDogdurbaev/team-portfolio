@@ -1,8 +1,27 @@
 .Navbar {
-  @apply flex;
+  @apply flex py-7 fixed top-0 left-0  w-screen ;
+  background-color: rgba(255, 255, 255, 0.05);
 
-  .nav{
-    @apply bg-sky-300;
+  .nav {
+    @apply flex w-11/12 mx-auto justify-between items-center ;
+
+    > div {
+      > h3 {
+        @apply text-2xl  leading-tight text-white;
+        letter-spacing: 1px;
+      }
+    }
+
+    > ul {
+      @apply flex  gap-10;
+
+      li {
+        > a {
+          @apply text-white hover:text-red-300 p-3
+        }
+      }
+    }
   }
+
 
 }
