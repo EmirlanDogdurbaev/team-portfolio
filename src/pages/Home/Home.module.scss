@@ -9,17 +9,16 @@
       @apply flex flex-col justify-items-start  justify-center w-full h-5/6 gap-5;
 
       > h2 {
-        @apply text-5xl  leading-tight text-white ;
-        font-family: 'Poppins', sans-serif;
-
+        @apply text-5xl  leading-tight text-white;
+        font-family: "Poppins", sans-serif;
       }
 
       > p {
-        @apply text-2xl w-2/3 leading-relaxed text-white
+        @apply text-2xl w-2/3 leading-relaxed text-white;
       }
 
       a {
-        @apply border border-white inline-block px-10 py-3 rounded bg-white my-3.5;
+        @apply text-white border border-white inline-block px-10 py-3 rounded  my-3.5 transition-all duration-300 ease-in  hover:text-orange-500 hover:border-orange-500;
         width: fit-content;
       }
     }
@@ -31,13 +30,13 @@
       @apply flex w-4/5 mx-auto gap-10 items-center justify-between h-5/6;
 
       img {
-        @apply w-1/4
+        @apply w-1/4;
       }
 
       > article {
         @apply text-white w-2/3;
         > p {
-          @apply text-xl   text-white ;
+          @apply text-xl   text-white;
           letter-spacing: 1px;
           line-height: 1.6;
         }
@@ -52,11 +51,11 @@
       @apply flex flex-col gap-10 w-4/5 mx-auto;
 
       h3 {
-        @apply text-5xl text-white ;
+        @apply text-5xl text-white;
       }
 
       .line {
-        @apply bg-orange-400 h-1 w-1/6
+        @apply bg-orange-400 h-1 w-1/6;
       }
 
       > aside {
@@ -72,32 +71,55 @@
     }
   }
 
-
   .departments_card {
     @apply flex flex-col justify-center w-screen;
 
     > section {
       @apply flex  gap-10 w-11/12 mx-auto justify-between;
       > article {
-        @apply flex items-end w-1/3 border-white border ;
+        @apply flex items-end border-white border bg-blue-200;
         height: 600px;
-
+        width: 30%;
 
         > aside {
-          @apply bg-white w-screen py-1.5 px-2.5 text-black h-40 flex flex-col gap-5;
+          @apply bg-white w-screen py-1.5 px-2.5 text-black h-24 flex flex-col gap-5 overflow-hidden transition-all duration-300 ease-in hover:h-40;
 
           > h4 {
-            @apply text-black mx-0 text-2xl
+            @apply text-black mx-0 text-2xl pt-1.5;
           }
 
           > p {
-            @apply text-black mx-0 text-xs
+            @apply text-black mx-0 text-xs;
           }
 
           > a {
-            @apply px-2.5 py-1.5 border border-black;
+            @apply px-2.5 py-1.5 border-b-2 border-orange-500 text-orange-500 uppercase text-start;
             width: fit-content;
           }
+        }
+      }
+    }
+  }
+
+
+  .slider_title{
+    @apply w-screen flex items-end h-72;
+
+    >section{
+      @apply w-11/12 mx-auto  flex flex-col gap-4;
+
+      h3{
+        @apply text-5xl
+      }
+
+      .line {
+        @apply bg-orange-400 h-1 w-1/6;
+      }
+
+      article{
+        @apply py-3;
+        p{
+          @apply text-xl w-2/3
         }
       }
     }
