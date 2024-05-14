@@ -10,11 +10,10 @@ const CustomSlider = () => {
         infinite: false,
         arrows: false,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 4.2,
         slidesToScroll: 3,
         lazyLoad: true,
     };
-
 
     const slides = [
         {
@@ -26,16 +25,15 @@ const CustomSlider = () => {
         {id: 2, label: "axaxa", title: ""},
         {id: 3, label: "axax", title: ""},
         {id: 4, label: "axaxa", title: ""},
-        {id: 5, label: "axaxa", title: ""},
+        {id: 5, label: "axaxa", title: "фчфчф"},
     ];
 
     return (
         <div
             style={{
                 width: "95%",
-                margin: "100px auto",
-                padding: "100px 0",
-                height: "1000px",
+                margin: "20px auto",
+                padding: "50px 0",
             }}
         >
             <Slider {...settings}>
@@ -60,7 +58,11 @@ const CustomSlider = () => {
                                 margin: "0px 30px",
                                 overflow: "none",
                                 position: "relative",
+                                backgroundSize: "cover",
+                                backgroundColor: "rgba(0, 0, 0, 0.6)",
+                                backgroundImage: `url("https://lh4.googleusercontent.com/fdI3MwNN_X6nh_GpDm3I8Ldz_UQhxcwI9ND2mqcB8toxeseArXc1nMNPrOQU3-JnpodZtnleY1QHcETogfQDAUW6RaHCoEs5r2wgKqOxeKWhwK0KaTZpB5PLqJQXkQhOwGA01kLv")`,
                             }}
+
                             key={slide.id}
                         >
                             <h3
@@ -74,11 +76,14 @@ const CustomSlider = () => {
                             >
                                 {slide.title}
                             </h3>
-                            <img
-                                src="https://lh4.googleusercontent.com/fdI3MwNN_X6nh_GpDm3I8Ldz_UQhxcwI9ND2mqcB8toxeseArXc1nMNPrOQU3-JnpodZtnleY1QHcETogfQDAUW6RaHCoEs5r2wgKqOxeKWhwK0KaTZpB5PLqJQXkQhOwGA01kLv"
-                                alt=""
-                                style={{width: "100%", height: "400px", objectFit: "cover"}}
-                            />
+
+                            <aside
+                                className="flex flex-col h-full items-center justify-center transition-all ease-in duration-500 gap-5 hover:bg-black/50">
+                                <h4 className=' font-bold z-10 text-white'>Lorem ipsum dolor.</h4>
+                                <span className='h-0.5 w-10 bg-red-900'/>
+                                <p className='text-center w-11/12 text-black transition-all duration-100 ease-in opacity-0 hover:opacity-100 hover:text-white'>Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit. Sit, vero.</p>
+                            </aside>
                         </article>
                     </div>
                 ))}
