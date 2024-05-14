@@ -6,9 +6,6 @@ import Projects from "./pages/Projects/Projects.jsx";
 import Home from "./pages/Home/Home.jsx";
 import Register from "./components/Auth/Register/Register";
 import Login from "./components/Auth/Login/Login";
-import Slide from "./components/Slide/Slide.jsx";
-import Slider from "./components/Slider/Slider.jsx";
-
 function App() {
     return (
         <>

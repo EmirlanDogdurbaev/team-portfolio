@@ -76,7 +76,6 @@ const Projects = () => {
                 <p>No project found</p>
             )}
 
-
         </section>
     );
 };

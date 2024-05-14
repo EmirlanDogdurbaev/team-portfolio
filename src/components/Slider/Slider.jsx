@@ -10,7 +10,7 @@ const CustomSlider = () => {
         infinite: false,
         arrows: false,
         speed: 500,
-        slidesToShow: 4.2,
+        slidesToShow: 4,
         slidesToScroll: 3,
         lazyLoad: true,
     };
@@ -34,6 +34,8 @@ const CustomSlider = () => {
                 width: "95%",
                 margin: "20px auto",
                 padding: "50px 0",
+                backgroundColor:"black",
+                overflowY: "hidden",
             }}
         >
             <Slider {...settings}>
