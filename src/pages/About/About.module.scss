@@ -1,0 +1,41 @@
+.About {
+  @apply w-full h-auto flex flex-col;
+  > header {
+    @apply flex items-center justify-center w-full h-svh bg-black  bg-cover ;
+    background-image: url("https://img.goodfon.com/original/1920x1200/d/c8/karta-mira-chernyi-fon-mir-oranzhevyi.jpg");
+
+    > article {
+      @apply flex flex-col items-center justify-center w-full gap-10;
+
+      h4 {
+        @apply text-4xl font-bold leading-tight;
+      }
+
+      p {
+        @apply leading-9 text-lg w-3/4 text-center;
+      }
+    }
+  }
+
+  .who {
+    @apply w-full h-auto flex flex-col items-center justify-center;
+
+    > div {
+      @apply w-5/6 mx-auto h-96 flex flex-col gap-10;
+
+      h2{
+        @apply text-5xl;
+      }
+      .line {
+        @apply bg-orange-400 h-1 w-16;
+      }
+
+      p{
+        @apply leading-9 text-lg w-3/4;
+      }
+
+    }
+
+  }
+
+}
