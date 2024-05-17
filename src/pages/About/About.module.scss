@@ -1,7 +1,7 @@
 .About {
   @apply w-full h-auto flex flex-col;
   > header {
-    @apply flex items-center justify-center w-full h-svh bg-black  bg-cover ;
+    @apply flex items-center justify-center w-full h-svh bg-black  bg-cover;
     background-image: url("https://img.goodfon.com/original/1920x1200/d/c8/karta-mira-chernyi-fon-mir-oranzhevyi.jpg");
 
     > article {
@@ -21,21 +21,94 @@
     @apply w-full h-auto flex flex-col items-center justify-center;
 
     > div {
-      @apply w-5/6 mx-auto h-96 flex flex-col gap-10;
-
-      h2{
+      @apply w-11/12 mx-auto h-96 flex flex-col gap-10;
+      h2 {
         @apply text-5xl;
       }
       .line {
         @apply bg-orange-400 h-1 w-16;
       }
-
-      p{
+      p {
         @apply leading-9 text-lg w-3/4;
       }
-
     }
-
   }
 
+  .icons_container {
+    @apply w-full min-h-96;
+    height: 800px;
+
+    .inner {
+      @apply flex justify-between  w-11/12 mx-auto;
+
+      div {
+        @apply w-full  flex gap-x-28 gap-y-28 flex-wrap justify-between mx-auto;
+
+       svg{
+        width: 100px !important;
+       }
+      }
+    }
+  }
+
+  .team_card_cont {
+    @apply w-full h-auto flex flex-col  justify-center gap-10;
+
+    > article {
+      @apply flex flex-col w-11/12 mx-auto gap-10;
+
+      h3 {
+        @apply text-3xl;
+      }
+
+      p {
+        @apply text-xl;
+      }
+    }
+
+    > div {
+      @apply flex  gap-10  w-11/12 mx-auto flex-wrap;
+
+      .img {
+        width: 200px;
+        height: 200px;
+      }
+
+      > article {
+        @apply flex gap-4  border-white;
+        width: 48%;
+
+        > aside {
+          @apply flex flex-col gap-6 w-full justify-between;
+
+          h4 {
+            font-size: 16px;
+            text-transform: capitalize;
+          }
+
+          h6 {
+            font-size: 14px;
+          }
+
+          p {
+            @apply leading-tight text-xs text-white/50;
+            line-height: 1.6;
+            font-size: 14px;
+          }
+
+          span {
+            @apply flex gap-5 justify-between items-end;
+
+            div {
+              @apply flex gap-5;
+            }
+
+            a {
+              @apply text-orange-500 hover:border-r hover:pr-3 border-orange-200;
+            }
+          }
+        }
+      }
+    }
+  }
 }

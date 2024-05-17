@@ -1,5 +1,5 @@
 .Navbar {
-  @apply flex py-7 fixed top-0 left-0  w-screen z-40;
+  @apply flex py-7 relative top-0 left-0  w-screen z-40;
   background-color: rgba(255, 255, 255, 0.05);
 
   .nav {
@@ -20,6 +20,7 @@
           @apply text-white hover:text-red-300 p-3
         }
       }
+
     }
   }
 
