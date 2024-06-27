@@ -2,57 +2,39 @@
   @apply flex justify-center items-center flex-col gap-10 min-h-96 -mt-5;
 
   .header {
-    @apply w-screen flex justify-center items-center bg-red-200 min-h-96 px-10;
+    @apply w-screen flex justify-center items-center bg-black h-svh px-10;
 
     > div {
       @apply flex flex-col items-center justify-center  overflow-hidden;
 
-      > h3 {
-        @apply text-fuchsia-600 text-4xl  my-3.5;
+      > h2 {
+        @apply text-orange-500 text-5xl  my-3.5;
       }
 
       > p {
-        @apply text-3xl max-w-5xl text-center leading-normal font-light
+        @apply text-xl max-w-5xl text-center  font-light w-3/4;
+        line-height: 1.6;
       }
     }
   }
 
-  .tools {
-    @apply grid grid-cols-4 gap-4 items-center;
+  .projects_cont {
+    @apply flex flex-col gap-10  w-full  ;
 
-    > article {
-      @apply w-80 flex items-center justify-center;
+    div {
+      @apply w-11/12 mx-auto  flex flex-col gap-4 ;
 
-      > img {
-        @apply w-screen object-cover
+      h4 {
+        @apply text-3xl;
+      }
+
+      p {
+        @apply text-xl max-w-5xl text-white/75;
+        line-height: 1.8;
+        letter-spacing: 1px;
       }
     }
-  }
 
-
-  .card {
-    @apply min-w-56 px-5 py-5 border my-10 rounded shadow-amber-500;
-
-    h2 {
-      @apply text-sky-500 text-xl leading-tight my-2;
-    }
-
-    p {
-      @apply text-xl py-1 text-red-300 ;
-    }
-
-    h4 {
-      @apply text-red-500 text-xl leading-tight capitalize my-2.5 ;
-    }
-
-    > ul {
-      @apply flex flex-col items-start my-1.5 gap-2 justify-center list-disc;
-
-
-      > li {
-        @apply text-xl font-light text-sky-500 ml-4;
-      }
-    }
   }
 
 }
