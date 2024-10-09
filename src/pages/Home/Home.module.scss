@@ -4,7 +4,6 @@
   width: 100%;
 
 
-
   .container {
     //@apply flex w-11/12 mx-auto h-dvh  py-5;
     display: flex;
@@ -34,14 +33,12 @@
       }
 
       > p {
-        //@apply text-2xl w-2/3 leading-relaxed  ;
         font-size: 1.3rem;
         width: 60%;
         color: $white;
       }
 
       a {
-        //@apply   border   inline-block px-10 py-3 rounded  my-3.5 transition-all duration-300 ease-in  hover:text-orange-500 hover:border-orange-500 hover:bg-$white;
         width: fit-content;
         color: $white;
         border: 1px solid $white;
@@ -83,7 +80,6 @@
       }
 
       > article {
-        //@apply   w-2/3;
         color: $white;
         width: 66%;
 
@@ -113,7 +109,7 @@
       display: flex;
       flex-direction: column;
       margin: 0 auto;
-      width: 90% ;
+      width: 90%;
 
       h3 {
         //@apply text-5xl  ;
@@ -128,11 +124,11 @@
 
       > aside {
         //@apply py-1;
-        padding: 1rem 0;
+        padding: 1em 0;
 
         > p {
           //@apply text-xl;
-
+          font-size: 20px;
           line-height: 1.6;
           letter-spacing: 1px;
         }
@@ -147,6 +143,7 @@
     justify-content: center;
     width: 100%;
     background-color: black;
+    padding-bottom: 40px;
 
     > section {
       //@apply flex  gap-10 w-11/12 mx-auto justify-between;
@@ -174,7 +171,7 @@
           flex-direction: column;
           overflow: hidden;
           color: black;
-          gap: 2rem;
+          gap: 15px;
           transition: all 300ms ease-in;
           height: 60px;
 
@@ -184,19 +181,27 @@
 
 
           > h4 {
-            //@apply text-black mx-0 text-2xl pt-1.5;
             font-size: 1.2rem;
             color: black;
+            margin: 0;
+            font-size: 24px;
           }
 
           > p {
             color: black;
+            margin: 0;
             font-size: .9rem;
+            padding: 0;
           }
 
           > a {
             //@apply px-2.5 py-1.5 border-b-2 border-orange-500 text-orange-500 uppercase text-start;
             width: fit-content;
+            padding: 8px 12px;
+            border: 1px solid $orange;
+            text-transform: uppercase;
+            text-align: start;
+            font-size: 12px;
           }
         }
       }
@@ -205,23 +210,41 @@
 
 
   .slider_title {
-    @apply w-screen flex items-end h-72 bg-black;
+    //@apply w-screen flex items-end h-72 bg-black;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    height: 290px;
+    background-color: black;
 
     > section {
-      @apply w-11/12 mx-auto  flex flex-col gap-4;
+      //@apply w-11/12 mx-auto  flex flex-col gap-4;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
 
       h3 {
-        @apply text-5xl
+        //@apply text-5xl;
+        font-size: 48px;
       }
 
       .line {
-        @apply bg-orange-400 h-1 w-1/6;
+        //@apply bg-orange-400 h-1 w-1/6;
+        background-color: $orange;
+        height: 4px;
+        width: 16%;
       }
 
       article {
-        @apply py-3;
+        //@apply py-3;
+        padding: 12px 0;
+
         p {
-          @apply text-xl w-2/3
+          //@apply text-xl w-2/3;
+          font-size: 20px;
+          line-height: 1.6;
         }
       }
     }
@@ -229,16 +252,29 @@
 
 
   .big_container {
-    @apply bg-black w-screen  bg-black h-svh h-auto;
+    //@apply bg-black w-screen  h-svh h-auto;
+    background-color: black;
+    width: 100%;
+    height: auto;
+
 
     > section {
-      @apply w-5/6 mx-auto flex flex-col gap-x-4 bg-black py-40 ;
-
+      //@apply w-5/6 mx-auto flex flex-col gap-x-4 bg-black py-40 ;
+      width: 1260px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 160px 0;
       background-color: #111112;
-
       div {
-        @apply flex gap-10 items-center justify-center w-5/6 mx-auto h-5/6 ;
-
+        //@apply flex gap-10 items-center justify-center w-5/6 mx-auto h-5/6 ;
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        width: 83%;
+        margin: 0 auto;
         img {
           width: 522px;
           height: 695px;
@@ -246,8 +282,14 @@
 
         article {
           @apply flex flex-col gap-10;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
           h3 {
             //@apply text-5xl leading-tight  ;
+            font-size: 48px;
+            line-height: 1.25;
+
           }
 
           .line {
