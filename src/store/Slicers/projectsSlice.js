@@ -7,7 +7,6 @@ export const getProjects = createAsyncThunk(
   async function (_, { rejectedWithValue }) {
     try {
       const res = await axios.get(`${API_URI}/api/project-pages`);
-
       console.log(res.data.projectPages);
       if (res.status !== 200) {
         throw new Error("server error");

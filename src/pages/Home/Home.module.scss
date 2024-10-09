@@ -1,43 +1,96 @@
+@import "../../../src/assets/styles/scss/_variables.scss";
+
 .Home {
-  @apply w-screen h-screen bg-no-repeat  bg-left-bottom bg-cover;
-  //overflow-x: hidden;
-  background-image: url("https://w.forfun.com/fetch/8c/8c79d9da358b5156576ec3e284ae08d1.jpeg");
+  width: 100%;
+
+
 
   .container {
-    @apply flex w-11/12 mx-auto h-dvh  py-5;
+    //@apply flex w-11/12 mx-auto h-dvh  py-5;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 700px !important;
+    padding: 20px 0;
+    justify-content: center;
+    flex-direction: column;
 
     > article {
-      @apply flex flex-col justify-items-start  justify-center w-full h-5/6 gap-5;
+      //@apply flex flex-col justify-items-start  justify-center w-full h-5/6 gap-5;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+      gap: 1.25rem;
+      height: 80%;
 
       > h2 {
-        @apply text-5xl  leading-tight text-white;
+        //@apply text-5xl  leading-tight  ;
         font-family: "Poppins", sans-serif;
+        font-size: 3rem;
+        line-height: 1.25;
+        color: $white;
       }
 
       > p {
-        @apply text-2xl w-2/3 leading-relaxed text-white;
+        //@apply text-2xl w-2/3 leading-relaxed  ;
+        font-size: 1.3rem;
+        width: 60%;
+        color: $white;
       }
 
       a {
-        @apply text-white border border-white inline-block px-10 py-3 rounded  my-3.5 transition-all duration-300 ease-in  hover:text-orange-500 hover:border-orange-500 hover:bg-white;
+        //@apply   border   inline-block px-10 py-3 rounded  my-3.5 transition-all duration-300 ease-in  hover:text-orange-500 hover:border-orange-500 hover:bg-$white;
         width: fit-content;
+        color: $white;
+        border: 1px solid $white;
+        display: inline-block;
+        padding: 12px 40px;
+        border-radius: 5px;
+        margin: 10px 0;
+        transition: all 300ms ease-in;
+
+        &:hover {
+          color: orange;
+          border-color: orange;
+          background-color: $white;
+        }
       }
     }
   }
 
   .quote {
-    @apply h-96 flex flex-col justify-center w-screen bg-black;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 384px;
+    background-color: black;
+
     > section {
-      @apply flex w-4/5 mx-auto gap-10 items-center justify-between h-5/6;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2.5rem;
+      margin: 0 auto;
+      width: 83%;
+      height: 83%;
 
       img {
-        @apply w-1/4;
+        width: 25%;
       }
 
       > article {
-        @apply text-white w-2/3;
+        //@apply   w-2/3;
+        color: $white;
+        width: 66%;
+
         > p {
-          @apply text-xl   text-white;
+          //@apply text-xl    ;
+          font-size: 1.2rem;
+          color: $white;
           letter-spacing: 1px;
           line-height: 1.6;
         }
@@ -46,25 +99,39 @@
   }
 
   .departments {
-    @apply flex flex-col justify-center w-screen py-10 bg-black;
+    //@apply flex flex-col justify-center w-screen py-10 bg-black;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0;
+    background-color: black;
 
     > section {
-      @apply flex flex-col gap-10 w-4/5 mx-auto bg-black;
+      //@apply flex flex-col gap-10 w-4/5 mx-auto bg-black;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 90% ;
 
       h3 {
-        @apply text-5xl text-white;
+        //@apply text-5xl  ;
+        color: $white;
+        font-size: 34px;
       }
 
       .line {
-        @apply bg-orange-400 h-1 w-1/6;
+        //@apply bg-orange-400 h-1 w-1/6;
+        background-color: $orange;
       }
 
       > aside {
-        @apply py-1;
+        //@apply py-1;
+        padding: 1rem 0;
 
         > p {
-          @apply text-xl;
+          //@apply text-xl;
 
           line-height: 1.6;
           letter-spacing: 1px;
@@ -74,28 +141,61 @@
   }
 
   .departments_card {
-    @apply flex flex-col justify-center w-screen bg-black;
+    //@apply flex flex-col justify-center w-screen bg-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
 
     > section {
-      @apply flex  gap-10 w-11/12 mx-auto justify-between;
+      //@apply flex  gap-10 w-11/12 mx-auto justify-between;
+      display: flex;
+      gap: 2.5rem;
+      width: 90%;
+      margin: 0 auto;
+      justify-content: space-between;
+
       > article {
-        @apply flex items-end border-white border bg-blue-200;
+        //@apply flex items-end   border bg-blue-200;
         height: 600px;
         width: 30%;
+        border: 1px solid white;
+        background-color: #0056b3;
+        align-items: flex-end;
+        display: flex;
 
         > aside {
-          @apply bg-white w-screen py-1.5 px-2.5 text-black h-24 flex flex-col gap-5 overflow-hidden transition-all duration-300 ease-in hover:h-40;
+          //@apply bg-$white w-screen py-1.5 px-2.5 text-black h-24 flex flex-col gap-5 overflow-hidden transition-all duration-300 ease-in hover:h-40;
+          background-color: $white;
+          width: 100%;
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          color: black;
+          gap: 2rem;
+          transition: all 300ms ease-in;
+          height: 60px;
+
+          &:hover {
+            height: 160px;
+          }
+
 
           > h4 {
-            @apply text-black mx-0 text-2xl pt-1.5;
+            //@apply text-black mx-0 text-2xl pt-1.5;
+            font-size: 1.2rem;
+            color: black;
           }
 
           > p {
-            @apply text-black mx-0 text-xs;
+            color: black;
+            font-size: .9rem;
           }
 
           > a {
-            @apply px-2.5 py-1.5 border-b-2 border-orange-500 text-orange-500 uppercase text-start;
+            //@apply px-2.5 py-1.5 border-b-2 border-orange-500 text-orange-500 uppercase text-start;
             width: fit-content;
           }
         }
@@ -147,7 +247,7 @@
         article {
           @apply flex flex-col gap-10;
           h3 {
-            @apply text-5xl leading-tight text-white;
+            //@apply text-5xl leading-tight  ;
           }
 
           .line {
@@ -176,11 +276,11 @@
       div {
         @apply flex flex-col w-5/6 mx-auto gap-6 mb-10;
         h2 {
-          @apply text-4xl leading-tight text-white ;
+          @apply text-4xl leading-tight   ;
         }
 
         p {
-          @apply text-xl leading-tight text-white w-5/6  ;
+          @apply text-xl leading-tight   w-5/6  ;
         }
 
         .line {
@@ -195,15 +295,15 @@
           @apply w-full  ;
 
           h4 {
-            @apply text-white text-2xl;
+            @apply text-2xl;
           }
 
           input {
-            @apply w-full py-5 outline-none bg-transparent border-b border-white focus:border-orange-500 focus:text-orange-500;
+            @apply w-full py-5 outline-none bg-transparent border-b   focus:border-orange-500 focus:text-orange-500;
           }
         }
 
-        button{
+        button {
           @apply w-full  bg-orange-400 py-3 text-xl;
         }
       }
